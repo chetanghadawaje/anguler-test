@@ -1,0 +1,18 @@
+
+<div class="d-flex justify-content-between">
+    <p class="fs-2 title">All Products</p>
+
+    <!-- <div class="input-group serach">
+        <input type="text" class="form-control"/>
+        <span class="input-group-addon">
+            <i class="fa fa-search"></i>
+        </span>
+    </div> -->
+    <input type="text" class="form-control serach"  placeholder="Serach Products..." (keyup)="productSerach($event)">
+</div>
+
+<div class="container d-flex justify-content-evenly all-products">
+    @for (product of products; track $index) {
+        <app-product class="" [product] = product></app-product>
+    }
+</div>

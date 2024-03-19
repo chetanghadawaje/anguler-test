@@ -1,0 +1,16 @@
+.product-img{
+    height: 275px;
+    align-self: center;
+}
+
+.desc{
+    text-overflow: ellipsis;
+    height: 150px;
+    overflow: overlay;
+}
+
+.prd-title{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

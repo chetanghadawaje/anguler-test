@@ -1,0 +1,22 @@
+
+<div class="container-sm my-width login-div">
+    @if (login_message == "Login Successful..") {
+        <div class="alert alert-success" role="alert">
+            {{login_message}}
+        </div>
+    }@else if (login_message == "Login Unsuccessful..") {
+        <div class="alert alert-danger" role="alert">
+            {{login_message}}
+        </div>
+    }
+    <div class="mb-3">
+        <label class="form-label">Username</label>
+        <input type="text" class="form-control" [formControl] = username>
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+        <input type="text" class="form-control" [formControl] = password>
+    </div>
+
+    <button class="btn btn-primary mb-3" (click)="login()">Login</button>
+</div>

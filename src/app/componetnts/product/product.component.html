@@ -1,0 +1,11 @@
+
+<div class="card" style="width: 18rem;">
+    <img [src]=product.image class="w-75 p-3 card-img-top product-img">
+    <div class="card-body">
+      <h5 class="card-title prd-title" tabindex="0" data-bs-toggle="tooltip" title="Disabled tooltip">{{product.title}}</h5>
+      <p class="card-text text-wrap desc" >{{product.description}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{product.price | currency:'INR' }}</li>
+    </ul>
+</div>
